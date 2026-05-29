@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>祐星社公开图片列表</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+  <header class="header">
+
+    <h1>祐星社公开图片列表</h1>
+
+    <div class="toolbar">
+
+      <button onclick="sortByDate()">
+        按日期排序
+      </button>
+
+      <button onclick="sortByPlatform()">
+        按平台排序
+      </button>
+
+      <button onclick="resetGallery()">
+        恢复默认
+      </button>
+
+    </div>
+
+  </header>
+
+  <main
+    class="gallery"
+    id="gallery"
+  ></main>
+
+  <!-- 图片查看器 -->
+
+  <div
+    class="viewer"
+    id="viewer"
+  >
+
+    <div
+      class="viewer-close"
+      onclick="closeViewer()"
+    >
+      ×
+    </div>
+
+    <img id="viewerImage">
+
+    <div class="zoom-controls">
+
+      <button onclick="zoomOut()">
+        −
+      </button>
+
+      <button onclick="zoomIn()">
+        +
+      </button>
+
+      <button onclick="resetZoom()">
+        ⟳
+      </button>
+
+    </div>
+
+  </div>
+
+  <footer class="footer">
+
+  <div class="footer-content">
+
+    <div class="footer-title">
+      祐星社公开图片列表
+    </div>
+
+    <div class="footer-desc">
+      基于 GitHub Pages 部署
+    </div>
+
+    <div class="footer-copyright">
+      © 2026 ElicaseTech
+    </div>
+
+  </div>
+
+</footer>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
